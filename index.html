@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  
+  <title>REGISTRO DE LLAMADO DENTAL</title>
+</head>
+<body>
+
+
+  <div id="acceso" class="acceso">
+        <h2>ACCESO RESTRINGIDO</h2>
+        <input type="password" id="clave" placeholder="Clave">
+        <button onclick="verificarClave()" class="botonpwd">OK</button>
+      </div>
+
+
+
+
+
+
+
+
+   <form id="form" class="form" name="form" action="https://script.google.com/macros/s/AKfycbwqPrwX03gePmg1f8XFhTW2hopbD2uEIJvTvGcIG53RW7cVzf61oJVseeg-Huu4ETkehQ/exec" method="post">
+    
+    
+    <img class="img2" src="https://www.hospitalillapel.cl/institucional/wp-content/uploads/2019/07/LOGO-CHICO-03_hospital_vert.png">
+     <img class="img" src="https://www.hospitalillapel.cl/institucional/wp-content/uploads/2019/07/LOGO-CHICO-03_hospital_vert.png">    
+    <h1 class="h1">REGISTRO DE LLAMADO DENTAL</h1>
+
+    <div class="divFecha">
+       
+        <label for="fecha" class="fecha" name="fecha">FECHA DE REGISTRO</label>
+        <input type="datetime" name="fecha" id="fecha" class="fecha" readonly>
+  
+      </div>
+
+
+
+    <fieldset class="fieldset1">
+
+      <LEgend class="legend"> DATOS DEL PACIENTE</LEgend>
+    
+
+    <div class="divNombrePx">
+      <label for="nombrePx" class="label">NOMBRE Y APELLIDO</label>
+      <input type="text" class="nombrePx" name="nombrePx" required>
+      <label for="edadpx" class="label">EDAD</label>
+      <input type="number" class="edadPx" name="edadPx" required>
+      
+    </div>
+
+    <div class="divRutPx">
+    <label for="rutPx" class="label">RUT</label>
+      <input type="text" class="rutPx" name="rutPx" required placeholder="Sin (.) con (-)">
+
+      <label for="contacto">TELEFONO</label>
+      <input type="text" class="contacto" name="contacto" required>
+
+    </div>
+
+
+  <div class="divLat">
+    <label for="diagnostico">DIAGNÓSTICO</label>
+    <input type="text" class="dx" name="dx" required>
+    <label for="labeldireccion">DIRECCION</label>
+    <input type="text" class="direccion" name="direccion" required>
+    
+    
+</div>
+      
+   
+    </fieldset>
+
+
+
+
+
+    <fieldset class="fieldset2">
+      <LEGEnd class="legend">DATOS DEL RECEPTOR</LEGEnd>
+    
+     <div class="divNombreRec">
+      <label for="nombreRec" class="label">NOMBRE Y APELLIDO</label>
+      <input type="text" class="nombreRec" name="nombreRec" required>
+      <label for="rutRec" class="label">RUT</label>
+      <input type="text" class="rutRec" name="rutRec" required placeholder="Sin (.) con (-)">
+      
+    </div>
+
+
+    <div class="divNombreRec">
+      <label for="parentesco" class="label">PARENTESCO CON EL PACIENTE</label>
+      <input type="text" class="parentesco" name="parentesco" required>
+</div>
+
+
+
+
+<div>
+  <label for="MOTIVO">MOTIVO</label>
+  <select class="selectMotivo" name="selectMotivo" required id="selecMotivo">
+    <option value=""></option>
+    <option value="CONSULTA NUEVA">CONSULTA NUEVA</option>
+    <option value="CONTROL">CONTROL</option>
+    <option value="RE-AGENDAMIENTO">RE-AGENDAMIENTO</option>
+    <option value="CONFIRMACION DE CITA">CONFIRMACION DE CITA</option>
+
+
+  </select>
+</div>
+
+
+<DIv></DIv>
+  <label for="Respuesta">RESPUESTA</label>
+  <select class="selectRespuesta" name="selectRespuesta" required id="selectRespuesta">
+    <option value=""></option>
+    <option value="ACEPTA ">ACEPTA</option>
+    <option value="RECHAZA">RECHAZA</option>
+    <option value="POSTERGA">POSTERGA</option>
+    <option value="NO RESPONDE LLAMADA">NO RESPONDE LLAMADA</option>
+    <option value="ENTREGARA INFORMACION">ENTREGARA INFORMACION</option>
+    <option value="NUMERO TELEFONICO NO CORRESPONDE">NUMERO TELEFONICO NO CORRESPONDE</option>
+
+  </select>  
+   
+
+</div>
+
+
+  
+</fieldset>
+
+
+<fieldset class="interconsulta"> 
+    <legend class="legend">DATOS DE INTERCONSULTA</legend>
+    <label for="especialidad">ESPECIALIDAD</label>
+    <input type="text" class="especialidad" name="especialidad" required>
+    <label for="centroOrigen">CENTRO DE ORIGEN</label>
+    <input type="text" class="centroOrigen" name="centroOrigen" required>
+    
+    
+    
+    
+    <label for="labelfechaIc" class="labelfechaIc" name="labelfechaIc">FECHA DE IC</label>
+    <input type="date" name="fechaIc" id="fechaIc" class="fechaIc" required>
+    
+    
+    
+    
+    
+    <label for="estadoIc" class="labelestadoIc">ESTADO IC</label>
+    <select class="estadoIc" name="estadoIc" required id="estadoIc">
+        <option value=""></option>
+        <option value="INICIAL">INICIAL</option>
+        <option value="AGENDADO">AGENDADO</option>
+        <option value="EGRESO">EGRESO</option>
+    </select>
+    <label for="fechaAgenda" class="labelfechaAgenda" name="labelfechaAgenda">SI ESTADO DE IC ES "AGENDADO" INDICAR FECHA</label>
+            <input type="date" name="fechaAgenda" id="fechaAgenda" class="fechaAgenda">
+    
+    
+    </fieldset>
+
+
+
+
+
+
+<Fieldset class="fieldset3">
+    
+<LEgend class="legend">OBSERVACIONES</LEgend>
+
+
+<div class="divObservaciones">
+  
+<div>
+  <textarea class="ttobservaciones" name="ttobservaciones" id="ttobservaciones" rows="5" placeholder="Sea lo más específico posible" required></textarea>
+
+</div>
+
+    
+</Fieldset>
+
+
+
+
+<div class= "funcionario">
+    <label>FUNCIONARIO</label>
+  
+    <select name="selectFuncionario" id="selectFuncionario" class="selectFuncionario">
+        
+        <option value="Alejandro Cesped">Alejandro Cesped</option>
+        <option value="Amalia Jorquera Jorquera">Amalia Jorquera Jorquera</option>
+        <option value="Fernanda Astorga Henriquez">Fernanda Astorga Henriquez</option>
+        <option value="Paola Varas">Amalia Jorquera Jorquera</option>
+        <option value="Serchelin Leon Rozas">Serchelin Leon Rozas</option>
+        <option value="Maria soledad gonzalez">Maria soledad gonzalez</option>
+        <option value="Camila Pavez Torrijo">Camila Pavez Torrijo</option>
+        <option value="Sofia antiquera">Sofia antiquera</option>
+        <option value="Miguel Briceño">Miguel Briceño</option>
+        <option value="Dafne Araya English">Dafne Araya English</option>
+
+
+     
+    </select>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="botones">
+<button type="reset" class="BTNR" name="BTNR" id="BTNR">NUEVO PACIENTE</button> 
+    <button type="submit" class="BTN" name="BTN" id="BTN">REGISTRAR</button>
+    
+</div>
+</fieldset>
+
+
+
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

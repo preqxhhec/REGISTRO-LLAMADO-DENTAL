@@ -137,7 +137,21 @@
 <fieldset class="interconsulta"> 
     <legend class="legend">DATOS DE INTERCONSULTA</legend>
     <label for="especialidad">ESPECIALIDAD</label>
-    <input type="text" class="especialidad" name="especialidad" required>
+
+
+ <select class="especialidad" name="especialidad" required id="selectRespuesta">
+    <option value=""></option>
+   <option value="Endodoncia">Endodoncia</option>
+   <option value="Ortodoncia">Ortodoncia</option>
+   <option value="TTM">TTM</option>
+   <option value="Cirugía Maxilofacial">Cirugía Maxilofacial</option>
+   <option value="Odontopediatría">Odontopediatría</option>
+   <option value="Rehabilitación Oral">Rehabilitación Oral</option>
+   <option value="Periodoncia">Periodoncia</option>
+
+
+  </select>  
+
     <label for="centroOrigen">CENTRO DE ORIGEN</label>
     <input type="text" class="centroOrigen" name="centroOrigen" required>
     
@@ -192,6 +206,7 @@
   
     <select name="selectFuncionario" id="selectFuncionario" class="selectFuncionario">
         
+        <option value="Jasna Araya Lira">Jasna Araya Lira</option>
         <option value="Alejandro Cesped">Alejandro Cesped</option>
         <option value="Amalia Jorquera Jorquera">Amalia Jorquera Jorquera</option>
         <option value="Fernanda Astorga Henriquez">Fernanda Astorga Henriquez</option>

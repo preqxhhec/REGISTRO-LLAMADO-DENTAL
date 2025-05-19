@@ -67,6 +67,7 @@ document.getElementById('BTN').addEventListener('click', function(e) {
 
  const especialistas = {
     "ALC01": "Alejandro Cesped",
+    "JAL11": "Jasna Araya Lira",
     "AJO02": "Amalia Jorquera Jorquera",
     "FHA03": "Fernanda Astorga Henriquez",
     "VPA04": "Paola Varas",

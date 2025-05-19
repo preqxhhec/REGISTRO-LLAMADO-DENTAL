@@ -77,6 +77,9 @@ document.getElementById('BTN').addEventListener('click', function(e) {
     "TIS08": "Sofia antiquera",
     "BMR09": "Miguel Briceño",
     "AEN10": "Dafne Araya English",
+    "BAG12": "Angela Bustamante",
+    "BPA13": "Pamela Barrera",
+    "DCE14": "Daniela Celis",
          };
 
 

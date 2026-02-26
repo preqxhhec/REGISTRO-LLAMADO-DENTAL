@@ -126,6 +126,7 @@ function actualizarEspecialista(clave) {
   // Agrega una opción por defecto
   const opcionDefecto = document.createElement("option");
   opcionDefecto.value = "";
-  opcionDefecto.text = "Seleccione un especialista";
+  opcionDefecto.text = "Seleccione un funcionario";
   selectEspecialista.add(opcionDefecto);
 }
+
